@@ -137,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F6A9BF62617B78C00FFB400 /* Build configuration list for PBXNativeTarget "SwiftUIGraphQLDemo" */;
 			buildPhases = (
+				4F6A9C022617B9E500FFB400 /* ShellScript */,
 				4F6A9BCD2617B78B00FFB400 /* Sources */,
 				4F6A9BCE2617B78B00FFB400 /* Frameworks */,
 				4F6A9BCF2617B78B00FFB400 /* Resources */,
@@ -253,6 +254,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F6A9C022617B9E500FFB400 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F6A9BCD2617B78B00FFB400 /* Sources */ = {
