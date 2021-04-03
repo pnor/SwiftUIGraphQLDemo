@@ -13,6 +13,9 @@
 		4F6A9BDC2617B78C00FFB400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6A9BDB2617B78C00FFB400 /* Preview Assets.xcassets */; };
 		4F6A9BE72617B78C00FFB400 /* SwiftUIGraphQLDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BE62617B78C00FFB400 /* SwiftUIGraphQLDemoTests.swift */; };
 		4F6A9BF22617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BF12617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift */; };
+		7592DD0B782E432D23B1432E /* Pods_SwiftUIGraphQLDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37212B3436D2A3934E044771 /* Pods_SwiftUIGraphQLDemo.framework */; };
+		B31F1C04E6968ED4940999D7 /* Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E266BFC0EFAF502669DB5F /* Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework */; };
+		B3DF941C74E52983B6157B8E /* Pods_SwiftUIGraphQLDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CD887D8F8500127A8FD96D /* Pods_SwiftUIGraphQLDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253D4111BC9B0DDD303C7B65 /* Pods-SwiftUIGraphQLDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		37212B3436D2A3934E044771 /* Pods_SwiftUIGraphQLDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIGraphQLDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3E27E51998B72A5B12A73A /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F6A9BD12617B78B00FFB400 /* SwiftUIGraphQLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGraphQLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6A9BD42617B78B00FFB400 /* SwiftUIGraphQLDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLDemoApp.swift; sourceTree = "<group>"; };
 		4F6A9BD62617B78B00FFB400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,12 @@
 		4F6A9BED2617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGraphQLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6A9BF12617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLDemoUITests.swift; sourceTree = "<group>"; };
 		4F6A9BF32617B78C00FFB400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F113773F9FB1D139D8557E4 /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77CD887D8F8500127A8FD96D /* Pods_SwiftUIGraphQLDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIGraphQLDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		893445B30387ED7929AC780B /* Pods-SwiftUIGraphQLDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemoTests/Pods-SwiftUIGraphQLDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96E266BFC0EFAF502669DB5F /* Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4861CE160D70161C85888B /* Pods-SwiftUIGraphQLDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemoTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemoTests/Pods-SwiftUIGraphQLDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1C0E135E89E8FF7C42FB677 /* Pods-SwiftUIGraphQLDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7592DD0B782E432D23B1432E /* Pods_SwiftUIGraphQLDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DF941C74E52983B6157B8E /* Pods_SwiftUIGraphQLDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +80,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31F1C04E6968ED4940999D7 /* Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1041D0F363A1B78CC8476BC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253D4111BC9B0DDD303C7B65 /* Pods-SwiftUIGraphQLDemo.debug.xcconfig */,
+				C1C0E135E89E8FF7C42FB677 /* Pods-SwiftUIGraphQLDemo.release.xcconfig */,
+				3B3E27E51998B72A5B12A73A /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig */,
+				5F113773F9FB1D139D8557E4 /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.release.xcconfig */,
+				893445B30387ED7929AC780B /* Pods-SwiftUIGraphQLDemoTests.debug.xcconfig */,
+				AA4861CE160D70161C85888B /* Pods-SwiftUIGraphQLDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4F6A9BC82617B78B00FFB400 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +108,8 @@
 				4F6A9BE52617B78C00FFB400 /* SwiftUIGraphQLDemoTests */,
 				4F6A9BF02617B78C00FFB400 /* SwiftUIGraphQLDemoUITests */,
 				4F6A9BD22617B78B00FFB400 /* Products */,
+				1041D0F363A1B78CC8476BC7 /* Pods */,
+				A3AC303EFBB72E9348CCA0CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +161,16 @@
 			path = SwiftUIGraphQLDemoUITests;
 			sourceTree = "<group>";
 		};
+		A3AC303EFBB72E9348CCA0CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37212B3436D2A3934E044771 /* Pods_SwiftUIGraphQLDemo.framework */,
+				96E266BFC0EFAF502669DB5F /* Pods_SwiftUIGraphQLDemo_SwiftUIGraphQLDemoUITests.framework */,
+				77CD887D8F8500127A8FD96D /* Pods_SwiftUIGraphQLDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F6A9BF62617B78C00FFB400 /* Build configuration list for PBXNativeTarget "SwiftUIGraphQLDemo" */;
 			buildPhases = (
+				61C800ACA438ECC7949FC277 /* [CP] Check Pods Manifest.lock */,
 				4F6A9C022617B9E500FFB400 /* ShellScript */,
 				4F6A9BCD2617B78B00FFB400 /* Sources */,
 				4F6A9BCE2617B78B00FFB400 /* Frameworks */,
 				4F6A9BCF2617B78B00FFB400 /* Resources */,
+				00993A3BB1DA9C9EB251A3C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F6A9BF92617B78C00FFB400 /* Build configuration list for PBXNativeTarget "SwiftUIGraphQLDemoTests" */;
 			buildPhases = (
+				8A1B707F54B436C05669AE5A /* [CP] Check Pods Manifest.lock */,
 				4F6A9BDE2617B78C00FFB400 /* Sources */,
 				4F6A9BDF2617B78C00FFB400 /* Frameworks */,
 				4F6A9BE02617B78C00FFB400 /* Resources */,
@@ -173,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F6A9BFC2617B78C00FFB400 /* Build configuration list for PBXNativeTarget "SwiftUIGraphQLDemoUITests" */;
 			buildPhases = (
+				FF50E97E47098C77BDBDA97C /* [CP] Check Pods Manifest.lock */,
 				4F6A9BE92617B78C00FFB400 /* Sources */,
 				4F6A9BEA2617B78C00FFB400 /* Frameworks */,
 				4F6A9BEB2617B78C00FFB400 /* Resources */,
+				6F75EC56780773EF897B0D60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +302,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00993A3BB1DA9C9EB251A3C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4F6A9C022617B9E500FFB400 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +335,89 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		61C800ACA438ECC7949FC277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIGraphQLDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F75EC56780773EF897B0D60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A1B707F54B436C05669AE5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIGraphQLDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF50E97E47098C77BDBDA97C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -435,6 +581,7 @@
 		};
 		4F6A9BF72617B78C00FFB400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253D4111BC9B0DDD303C7B65 /* Pods-SwiftUIGraphQLDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +603,7 @@
 		};
 		4F6A9BF82617B78C00FFB400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C0E135E89E8FF7C42FB677 /* Pods-SwiftUIGraphQLDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +625,7 @@
 		};
 		4F6A9BFA2617B78C00FFB400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893445B30387ED7929AC780B /* Pods-SwiftUIGraphQLDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +647,7 @@
 		};
 		4F6A9BFB2617B78C00FFB400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4861CE160D70161C85888B /* Pods-SwiftUIGraphQLDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +669,7 @@
 		};
 		4F6A9BFD2617B78C00FFB400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3E27E51998B72A5B12A73A /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +689,7 @@
 		};
 		4F6A9BFE2617B78C00FFB400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F113773F9FB1D139D8557E4 /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
