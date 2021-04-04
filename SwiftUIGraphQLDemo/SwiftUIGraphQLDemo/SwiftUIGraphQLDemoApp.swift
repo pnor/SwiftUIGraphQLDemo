@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUIGraphQLDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            DetailView(mediaID: 1)
         }
     }
 }
