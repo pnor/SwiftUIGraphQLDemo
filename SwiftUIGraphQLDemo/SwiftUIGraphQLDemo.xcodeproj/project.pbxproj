@@ -13,6 +13,8 @@
 		4F6A9BDC2617B78C00FFB400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6A9BDB2617B78C00FFB400 /* Preview Assets.xcassets */; };
 		4F6A9BE72617B78C00FFB400 /* SwiftUIGraphQLDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BE62617B78C00FFB400 /* SwiftUIGraphQLDemoTests.swift */; };
 		4F6A9BF22617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BF12617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift */; };
+		4F7B06F8261A0F75002657BA /* MediaGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B06F7261A0F75002657BA /* MediaGridItem.swift */; };
+		4F7B06FD261A0FF3002657BA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B06FC261A0FF3002657BA /* Models.swift */; };
 		51AF1F102619414800957DED /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 51AF1F0F2619414800957DED /* schema.json */; };
 		51AF1F162619419100957DED /* Search.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 51AF1F152619419100957DED /* Search.graphql */; };
 		51AF1F2A26194AF100957DED /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AF1F2926194AF100957DED /* API.swift */; };
@@ -55,6 +57,8 @@
 		4F6A9BED2617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGraphQLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6A9BF12617B78C00FFB400 /* SwiftUIGraphQLDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLDemoUITests.swift; sourceTree = "<group>"; };
 		4F6A9BF32617B78C00FFB400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7B06F7261A0F75002657BA /* MediaGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGridItem.swift; sourceTree = "<group>"; };
+		4F7B06FC261A0FF3002657BA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		51AF1F0F2619414800957DED /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		51AF1F152619419100957DED /* Search.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Search.graphql; sourceTree = "<group>"; };
 		51AF1F2926194AF100957DED /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				4F6A9BD82617B78C00FFB400 /* Assets.xcassets */,
 				4F6A9BDD2617B78C00FFB400 /* Info.plist */,
 				4F6A9BDA2617B78C00FFB400 /* Preview Content */,
+				4F7B06F7261A0F75002657BA /* MediaGridItem.swift */,
+				4F7B06FC261A0FF3002657BA /* Models.swift */,
 			);
 			path = SwiftUIGraphQLDemo;
 			sourceTree = "<group>";
@@ -469,7 +475,9 @@
 			files = (
 				4F6A9BD72617B78B00FFB400 /* ContentView.swift in Sources */,
 				51AF1F2A26194AF100957DED /* API.swift in Sources */,
+				4F7B06FD261A0FF3002657BA /* Models.swift in Sources */,
 				51AF1F3226194C2F00957DED /* Network.swift in Sources */,
+				4F7B06F8261A0F75002657BA /* MediaGridItem.swift in Sources */,
 				4F6A9BD52617B78B00FFB400 /* SwiftUIGraphQLDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

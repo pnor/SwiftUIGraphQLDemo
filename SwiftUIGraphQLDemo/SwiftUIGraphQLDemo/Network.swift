@@ -10,5 +10,10 @@ import Apollo
 
 class Network {
     static let shared = ApolloClient(url: URL(string: "https://graphql.anilist.co/")!)
+
+    /// Executes Fetch query with GraphQL
+    // func search(page: Int, search: String) ->  {
+
+    // }
     
 }
