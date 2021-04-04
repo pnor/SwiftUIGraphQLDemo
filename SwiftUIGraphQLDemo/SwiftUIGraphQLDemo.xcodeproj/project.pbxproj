@@ -367,13 +367,11 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/SwiftUIGraphQLDemo/**/*.graphql",
 			);
 			name = "Generate Apollo GraphQL API";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/SwiftUIGraphQLDemo/API.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
