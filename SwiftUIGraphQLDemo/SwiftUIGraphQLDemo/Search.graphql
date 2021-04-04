@@ -1,0 +1,15 @@
+query Search($page:Int = 1, $search:String = "attack on titan") {
+  Page(page:$page) {
+    media(search:$search) {
+      title {
+        romaji
+        english
+        native
+        userPreferred
+      }
+      coverImage {
+        medium
+      }
+    }
+  }
+}
