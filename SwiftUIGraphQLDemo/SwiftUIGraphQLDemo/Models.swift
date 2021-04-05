@@ -31,6 +31,16 @@ struct Media {
     let seasonYear: Int?
     let episodes: Int?
 
+    init() {
+        self.id = 0
+        self.title = nil
+        self.coverImage = nil
+        self.status = nil
+        self.description = nil
+        self.seasonYear = nil
+        self.episodes = nil
+    }
+
     init(from media: MediaPageQuery.Data.Page.Medium) {
         self.id = media.id
 
@@ -59,6 +69,10 @@ struct Title {
     let native: String?
     let userPreferred: String?
 
+    var title: String {
+        romaji ?? english ?? native ?? userPreferred ?? "?"
+    }
+
     init(from title: MediaPageQuery.Data.Page.Medium.Title) {
         self.romaji = title.romaji
         self.english = title.english
@@ -71,6 +85,10 @@ struct CoverImage {
     let medium: URL?
     let large: URL?
     let extraLarge: URL?
+
+    var url: URL? {
+        return medium ?? large ?? extraLarge ?? nil
+    }
 
     init(from image: MediaPageQuery.Data.Page.Medium.CoverImage) {
         if let medium = image.medium {

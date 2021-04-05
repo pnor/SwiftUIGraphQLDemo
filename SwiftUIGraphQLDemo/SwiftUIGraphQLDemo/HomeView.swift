@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var mediaShown: Media?
+
+    func fetch() {
+        Network.mediaPage(page: 0) { page in
+            print("ok ready")
+            self.mediaShown = page.media[0]
+        }
+
+    }
 
     var body: some View {
-        VStack {
-            Button("Press Me (:") {
-                Network.search({ page in
-                    print(page)
-                })
-            }
-
-            Text("!")
+        if let mediaShown = mediaShown {
+            MediaGridItem(media: mediaShown)
+        } else {
+            Text("looooooooading....")
+              .onAppear(perform: fetch)
         }
     }
 }
