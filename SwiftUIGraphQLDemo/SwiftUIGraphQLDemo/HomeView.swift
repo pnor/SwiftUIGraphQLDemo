@@ -8,24 +8,53 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var mediaShown: Media?
+    @State private var page: Page?
 
-    func fetch() {
-        Network.mediaPage(page: 0) { page in
-            print("ok ready")
-            self.mediaShown = page.media[0]
-        }
-
-    }
+    let columns = [
+        GridItem(.adaptive(minimum: 80))
+    ]
 
     var body: some View {
-        if let mediaShown = mediaShown {
-            MediaGridItem(media: mediaShown)
+        if let page = page {
+            if page.media.count > 0 {
+                displayView(media: page.media)
+            } else {
+                displayEmpty()
+            }
         } else {
-            Text("looooooooading....")
+            loadingView()
               .onAppear(perform: fetch)
         }
     }
+
+    private func loadingView() -> some View {
+        Text("looooooooading....")
+
+    }
+
+    private func displayView(media: [Media]) -> some View {
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(media, id: \.self) { item in
+                    MediaGridItem(media: item)
+
+                }
+            }
+        }
+    }
+
+    private func displayEmpty() -> some View {
+        Text("The page is empty")
+    }
+
+    private func fetch() {
+        Network.mediaPage(page: 0) { page in
+            print("ok ready")
+            self.page = page
+        }
+    }
+
+
 }
 
 struct HomeView_Previews: PreviewProvider {

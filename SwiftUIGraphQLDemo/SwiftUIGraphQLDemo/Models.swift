@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Page {
+struct Page: Hashable {
     let media: [Media]
 
     init(from page: MediaPageQuery.Data.Page) {
@@ -21,7 +21,7 @@ struct Page {
     }
 }
 
-struct Media {
+struct Media: Hashable {
 
     let id: Int
     let title: Title?
@@ -63,7 +63,7 @@ struct Media {
     }
 }
 
-struct Title {
+struct Title: Hashable {
     let romaji: String?
     let english: String?
     let native: String?
@@ -81,7 +81,7 @@ struct Title {
     }
 }
 
-struct CoverImage {
+struct CoverImage: Hashable {
     let medium: URL?
     let large: URL?
     let extraLarge: URL?
