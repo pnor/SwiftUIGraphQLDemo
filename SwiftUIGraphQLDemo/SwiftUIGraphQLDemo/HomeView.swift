@@ -11,19 +11,24 @@ struct HomeView: View {
     @State private var page: Page?
 
     let columns = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(.flexible(minimum: 80), spacing: 10),
+        GridItem(.flexible(minimum: 80), spacing: 10),
+        GridItem(.flexible(minimum: 80), spacing: 10)
     ]
 
     var body: some View {
-        if let page = page {
-            if page.media.count > 0 {
-                displayView(media: page.media)
+        NavigationView {
+            if let page = page {
+                if page.media.count > 0 {
+                    displayView(media: page.media)
+
+                } else {
+                    displayEmpty()
+                }
             } else {
-                displayEmpty()
+                loadingView()
+                  .onAppear(perform: fetch)
             }
-        } else {
-            loadingView()
-              .onAppear(perform: fetch)
         }
     }
 
@@ -36,10 +41,11 @@ struct HomeView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(media, id: \.self) { item in
-                    MediaGridItem(media: item)
-
+                    NavigationLink(destination: DummyDetail(media: item)) {
+                        MediaGridItem(media: item)
+                    }.buttonStyle(PlainButtonStyle())
                 }
-            }
+            }.padding(.horizontal)
         }
     }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0A28C1261BCE6600E7E47E /* DummyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A28C0261BCE6600E7E47E /* DummyDetail.swift */; };
 		4F6A9BD52617B78B00FFB400 /* SwiftUIGraphQLDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BD42617B78B00FFB400 /* SwiftUIGraphQLDemoApp.swift */; };
 		4F6A9BD72617B78B00FFB400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A9BD62617B78B00FFB400 /* ContentView.swift */; };
 		4F6A9BD92617B78C00FFB400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6A9BD82617B78C00FFB400 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		253D4111BC9B0DDD303C7B65 /* Pods-SwiftUIGraphQLDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo/Pods-SwiftUIGraphQLDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		37212B3436D2A3934E044771 /* Pods_SwiftUIGraphQLDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIGraphQLDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3E27E51998B72A5B12A73A /* Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests/Pods-SwiftUIGraphQLDemo-SwiftUIGraphQLDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F0A28C0261BCE6600E7E47E /* DummyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDetail.swift; sourceTree = "<group>"; };
 		4F6A9BD12617B78B00FFB400 /* SwiftUIGraphQLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGraphQLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6A9BD42617B78B00FFB400 /* SwiftUIGraphQLDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGraphQLDemoApp.swift; sourceTree = "<group>"; };
 		4F6A9BD62617B78B00FFB400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				4F7B06F7261A0F75002657BA /* MediaGridItem.swift */,
 				4F7B06FC261A0FF3002657BA /* Models.swift */,
 				4F7B070A261AA312002657BA /* HomeView.swift */,
+				4F0A28C0261BCE6600E7E47E /* DummyDetail.swift */,
 			);
 			path = SwiftUIGraphQLDemo;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				4F6A9BD72617B78B00FFB400 /* ContentView.swift in Sources */,
 				4F7B070B261AA312002657BA /* HomeView.swift in Sources */,
 				51AF1F2A26194AF100957DED /* API.swift in Sources */,
+				4F0A28C1261BCE6600E7E47E /* DummyDetail.swift in Sources */,
 				4F7B06FD261A0FF3002657BA /* Models.swift in Sources */,
 				51AF1F3226194C2F00957DED /* Network.swift in Sources */,
 				4F7B06F8261A0F75002657BA /* MediaGridItem.swift in Sources */,
