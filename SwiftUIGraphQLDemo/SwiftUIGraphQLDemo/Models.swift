@@ -7,24 +7,88 @@
 
 import Foundation
 
-struct Detail: Codable {
+struct Page {
+    let media: [Media]
 
-    let title: Title
-    let status: String
-    let description: String
-    let seasonYear: Int
-    let episodes: Int
+    init(from page: MediaPageQuery.Data.Page) {
+        if let pageMedia = page.media {
+            self.media = pageMedia
+              .compactMap({ $0 })
+              .map { Media(from: $0) }
+        } else {
+            self.media = []
+        }
+    }
 }
 
-struct Title: Codable {
+struct Media {
+
+    let id: Int
+    let title: Title?
+    let coverImage: CoverImage?
+    let status: MediaStatus?
+    let description: String?
+    let seasonYear: Int?
+    let episodes: Int?
+
+    init(from media: MediaPageQuery.Data.Page.Medium) {
+        self.id = media.id
+
+        if let title = media.title {
+            self.title = Title(from: title)
+        } else {
+            self.title = nil
+        }
+
+        if let image = media.coverImage {
+            self.coverImage = CoverImage(from: image)
+        } else {
+            self.coverImage = nil
+        }
+
+        self.status = media.status
+        self.description = media.description
+        self.seasonYear = media.seasonYear
+        self.episodes = media.episodes
+    }
+}
+
+struct Title {
     let romaji: String?
     let english: String?
     let native: String?
     let userPreferred: String?
+
+    init(from title: MediaPageQuery.Data.Page.Medium.Title) {
+        self.romaji = title.romaji
+        self.english = title.english
+        self.native = title.native
+        self.userPreferred = title.userPreferred
+    }
 }
 
-struct CoverImage: Codable {
+struct CoverImage {
     let medium: URL?
     let large: URL?
     let extraLarge: URL?
+
+    init(from image: MediaPageQuery.Data.Page.Medium.CoverImage) {
+        if let medium = image.medium {
+            self.medium = URL(string: medium)
+        } else {
+            self.medium = nil
+        }
+
+        if let large = image.large {
+            self.large = URL(string: large)
+        } else {
+            self.large = nil
+        }
+
+        if let extraLarge = image.extraLarge {
+            self.extraLarge = URL(string: extraLarge)
+        } else {
+            self.extraLarge = nil
+        }
+    }
 }

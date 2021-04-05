@@ -1,6 +1,6 @@
-query Search($page:Int = 1, $search:String = "attack on titan") {
-  Page(page:$page) {
-    media(search:$search) {
+query MediaPage($page: Int, $perPage: Int = 30) {
+  Page(page: $page, perPage: $perPage) {
+    media {
       id
       title {
         romaji
@@ -20,4 +20,3 @@ query Search($page:Int = 1, $search:String = "attack on titan") {
     }
   }
 }
-
