@@ -21,6 +21,7 @@ struct HomeView: View {
             if let page = page {
                 if page.media.count > 0 {
                     displayView(media: page.media)
+                      .navigationTitle("Welcome to SwiftUIGraphQLDemo!")
 
                 } else {
                     displayEmpty()
