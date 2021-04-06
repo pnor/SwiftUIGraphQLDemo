@@ -13,17 +13,27 @@ struct MediaGridItem: View {
 
     var body: some View {
         VStack {
-            Text(media.title?.title ?? "?")
-                .lineLimit(1)
+            Spacer()
+            HStack {
+                Text(media.title?.title ?? "?")
+                    .font(.headline)
+                    .lineLimit(2)
+                Spacer()
+            }
+
+            HStack {
+                if let seasonYear = media.seasonYear {
+                    Text(verbatim: "\(seasonYear)")
+                        .font(.subheadline)
+                }
+                Spacer()
+            }
 
             if let url = media.coverImage?.url {
                 WebImage(url: url)
             }
-        }.background(
-            Rectangle()
-            .fill(Color.secondary)
-            .cornerRadius(3.0)
-        )
+            Spacer()
+        }
     }
 }
 

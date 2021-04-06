@@ -1,4 +1,4 @@
-query MediaPage($page: Int, $perPage: Int = 30) {
+query MediaPage($page: Int, $perPage: Int = 60) {
   Page(page: $page, perPage: $perPage) {
     media {
       id

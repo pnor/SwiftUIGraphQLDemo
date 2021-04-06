@@ -13,8 +13,8 @@ struct Page: Hashable {
     init(from page: MediaPageQuery.Data.Page) {
         if let pageMedia = page.media {
             self.media = pageMedia
-              .compactMap({ $0 })
-              .map { Media(from: $0) }
+                .compactMap({ $0 })
+                .map { Media(from: $0) }
         } else {
             self.media = []
         }
@@ -87,7 +87,7 @@ struct CoverImage: Hashable {
     let extraLarge: URL?
 
     var url: URL? {
-        return medium ?? large ?? extraLarge ?? nil
+        medium ?? large ?? extraLarge ?? nil
     }
 
     init(from image: MediaPageQuery.Data.Page.Medium.CoverImage) {

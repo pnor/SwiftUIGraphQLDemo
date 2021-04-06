@@ -69,7 +69,7 @@ public final class MediaPageQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    query MediaPage($page: Int, $perPage: Int = 30) {
+    query MediaPage($page: Int, $perPage: Int = 60) {
       Page(page: $page, perPage: $perPage) {
         __typename
         media {

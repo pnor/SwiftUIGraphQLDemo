@@ -10,10 +10,13 @@ import SwiftUI
 struct HomeView: View {
     @State private var page: Page?
 
+    let cellHeight: CGFloat = 190
+    let backgroundColor = Color.init(red: 0.8, green: 0.8, blue: 0.8)
+    let shadowColor = Color.init(red: 0.7, green: 0.7, blue: 0.7)
+
     let columns = [
-        GridItem(.flexible(minimum: 80), spacing: 10),
-        GridItem(.flexible(minimum: 80), spacing: 10),
-        GridItem(.flexible(minimum: 80), spacing: 10)
+        GridItem(.flexible(minimum: 0), spacing: 10),
+        GridItem(.flexible(minimum: 0), spacing: 10)
     ]
 
     var body: some View {
@@ -21,14 +24,14 @@ struct HomeView: View {
             if let page = page {
                 if page.media.count > 0 {
                     displayView(media: page.media)
-                      .navigationTitle("Welcome to SwiftUIGraphQLDemo!")
+                        .navigationTitle("Browse")
 
                 } else {
                     displayEmpty()
                 }
             } else {
                 loadingView()
-                  .onAppear(perform: fetch)
+                    .onAppear(perform: fetch)
             }
         }
     }
@@ -40,13 +43,24 @@ struct HomeView: View {
 
     private func displayView(media: [Media]) -> some View {
         ScrollView {
-            LazyVGrid(columns: columns) {
+            Spacer(minLength: 10)
+
+            LazyVGrid(columns: columns, spacing: 40) {
                 ForEach(media, id: \.self) { item in
                     NavigationLink(destination: DummyDetail(media: item)) {
                         MediaGridItem(media: item)
+                            .frame(height: cellHeight)
+                            .padding(10)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(.white)
+                                    .shadow(color: shadowColor, radius: 4, x: 1, y: 1)
+                            )
                     }.buttonStyle(PlainButtonStyle())
                 }
-            }.padding(.horizontal)
+            }
+            .animation(.linear)
+            .padding(.horizontal)
         }
     }
 
@@ -60,7 +74,6 @@ struct HomeView: View {
             self.page = page
         }
     }
-
 
 }
 

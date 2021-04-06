@@ -27,7 +27,6 @@ import Combine
 //
 // }
 
-
 class Network {
     static let shared = ApolloClient(url: URL(string: "https://graphql.anilist.co/")!)
 
